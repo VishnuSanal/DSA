@@ -7,7 +7,7 @@ public class FibonacciNumber {
         System.out.println(fib(n));
     }
 
-    public static int fib(int n) {
+    private static int fib(int n) {
         if (n <= 1)
             return n;
         else

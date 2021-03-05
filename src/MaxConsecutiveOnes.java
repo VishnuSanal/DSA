@@ -6,7 +6,7 @@ public class MaxConsecutiveOnes {
         System.out.println(findMaxConsecutiveOnes(ints));
     }
 
-    static int findMaxConsecutiveOnes(int[] ints) {
+    private static int findMaxConsecutiveOnes(int[] ints) {
         int current = 0, max = 0;
 
         for (int i : ints) {

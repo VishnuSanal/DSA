@@ -9,7 +9,7 @@ public class StudentsDoingHomework {
 
     }
 
-    public static int studentHW(int[] startTime, int[] endTime, int queryTime) {
+    private static int studentHW(int[] startTime, int[] endTime, int queryTime) {
 
         int count = 0;
 
