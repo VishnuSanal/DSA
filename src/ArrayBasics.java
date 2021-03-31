@@ -35,8 +35,13 @@ public class ArrayBasics {
     }
 
     private static int linearSearch(int[] num, int element) {
+
+        if (num == null || num.length == 0)
+            return -1;
+
         for (int i = 0; i < num.length; i++) {
-            if (num[i] == element) return i;
+            if (num[i] == element)
+                return i;
         }
         return -1;
     }
