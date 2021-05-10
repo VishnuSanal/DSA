@@ -1,7 +1,7 @@
 public class ReverseInteger {
     public static void main(String[] args) {
 
-        int s = 1237;
+        int s = 7321;
 
         System.out.println(reverse(s));
     }
@@ -11,23 +11,19 @@ public class ReverseInteger {
         if (num <= Integer.MIN_VALUE || num >= Integer.MAX_VALUE)
             return 0;
 
-        int i = String.valueOf(Math.abs(num)).length() - 1;
-
-        int result = 0, temp;
+        long rev = 0;
 
         while (num != 0) {
-            temp = num % 10;
+            int rem = num % 10;
 
-            result += temp * Math.pow(10, i);
+            rev = rev * 10 + rem;
 
             num /= 10;
-
-            i--;
         }
 
-        if (result <= Integer.MIN_VALUE || result >= Integer.MAX_VALUE)
+        if (rev <= Integer.MIN_VALUE || rev >= Integer.MAX_VALUE)
             return 0;
         else
-            return result;
+            return (int) rev;
     }
 }
